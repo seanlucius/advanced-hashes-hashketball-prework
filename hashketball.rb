@@ -35,7 +35,7 @@ def num_points_scored(name)
       if data.is_a?(Hash) 
         data.each do |player_name, stats|
           if player_name == name
-            return stats.values[2]
+            return stats[:points]
           end 
         end
       end 
